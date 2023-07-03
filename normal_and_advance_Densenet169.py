@@ -1632,7 +1632,7 @@ if __name__ == '__main__':  #straight away go to this
         print("total training data:",len(train_data))
         Model = Sequential()
 
-        pretrained_model= tf.keras.applications.DenseNet169(include_top=False,   =
+        pretrained_model= tf.keras.applications.DenseNet169(include_top=False,   
                            input_shape=(224,224,3),
                            classes=5,
                            weights='imagenet')

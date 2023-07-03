@@ -1595,20 +1595,6 @@ if __name__ == '__main__':  #straight away go to this
             if y_val[i]==4:
                 val_cat5_files.append(X_val[i])
 
-
-        print("val normal:",len(val_cat1_files))
-        print("val covid:",len(val_cat2_files))
-        print("val pneumonia:",len(val_cat3_files))
-        print("val tb:",len(val_cat4_files))
-        print("val cat:",len(val_cat5_files))
-        print("train normal:",len(train_cat1_files))
-        print("train covid:",len(train_cat2_files))
-        print("train pneumonia:",len(train_cat3_files))
-        print("train tb:",len(train_cat4_files))
-        print("train cat:",len(train_cat5_files))
-
-
-    
         train_aug_cat1,train_aug_cat2,train_aug_cat3,train_aug_cat4,train_aug_cat5=no_data_augmentation(train_cat1_files,train_cat2_files,train_cat3_files,train_cat4_files,train_cat5_files)
         val_aug_cat1,val_aug_cat2,val_aug_cat3,val_aug_cat4,val_aug_cat5=no_data_augmentation(val_cat1_files,val_cat2_files,val_cat3_files,val_cat4_files,val_cat5_files)
         
